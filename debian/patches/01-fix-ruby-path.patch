@@ -1,0 +1,11 @@
+--- a/core/cmd/cmdmsgs.rb.in	2025-02-26 13:40:49.409451455 +0100
++++ b/core/cmd/cmdmsgs.rb.in	2025-02-26 14:04:45.641585852 +0100
+@@ -30,7 +30,7 @@
+     unless Pathname.new(exe_name).absolute?
+       # We're assuming that the library path is relative to the current
+       # location of this script.
+-      exe_name = File.expand_path(File.join(File.dirname(__FILE__), LIBRARY_NAME))
++      exe_name = File.expand_path(File.join(File.dirname(__FILE__), exe_name))
+     end
+ 
+     # Drop command from list of arguments

@@ -1,0 +1,74 @@
+Source: gz-msgs
+Section: libs
+Priority: optional
+Maintainer: Giovanni Senatore <giovanni.senatore@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ gz-cmake,
+ libgz-math-dev,
+ libgz-utils-dev,
+ libtinyxml2-dev,
+ libprotobuf-dev,
+Standards-Version: 4.6.2
+Homepage: https://gazebosim.org/
+#Vcs-Browser: https://salsa.debian.org/debian/gz-msgs
+#Vcs-Git: https://salsa.debian.org/debian/gz-msgs.git
+
+Package: libgz-msgs-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends:
+ libgz-msgs11 (= ${binary:Version}),
+ ${misc:Depends},
+Description: Messages for Gazebo robot simulation - development files
+ Gazebo Messages is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+
+Package: libgz-msgs11
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Messages for Gazebo robot simulation
+ Gazebo Messages is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+
+Package: ruby-gz-msgs
+Architecture: any
+Multi-Arch: same
+Depends:
+ ruby,
+ ${shlibs:Depends},
+ ${misc:Depends},
+ libgz-msgs11 (= ${binary:Version}),
+Description: Messages for Gazebo robot simulation
+ Gazebo Messages is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+
+Package: python3-gz-msgs
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${python3:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends},
+ libgz-msgs11 (= ${binary:Version}),
+Description: Messages for Gazebo robot simulation
+ Gazebo Messages is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+
+
+#Package: libgz-msgs-tools
+#Architecture: any
+#Multi-Arch: same
+#Depends:
+# ${shlibs:Depends},
+# ${misc:Depends},
+# libgz-msgs11 (= ${binary:Version}),
+##Description: Messages for Gazebo robot simulation
+# Gazebo Messages is a component in the Gazebo framework, a set of libraries
+# designed to rapidly develop robot applications.
