@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.22.1 FATAL_ERROR)
 #============================================================================
 # Initialize the project
 #============================================================================
-project(gz-msgs11 VERSION 11.0.2)
+project(gz-msgs11 VERSION 11.1.0)
 
 #============================================================================
 # Find gz-cmake
@@ -99,8 +99,6 @@ set(GZ_UTILS_VER ${gz-utils3_VERSION_MAJOR})
 # Find gz-math
 gz_find_package(gz-math8 REQUIRED)
 set(GZ_MATH_VER ${gz-math8_VERSION_MAJOR})
-
-find_package(Python3 REQUIRED COMPONENTS Interpreter)
 
 #--------------------------------------
 # Find if command is available. This is used to enable tests.

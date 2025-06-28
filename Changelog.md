@@ -1,5 +1,34 @@
 ## Gazebo Msgs 11.x
 
+### Gazebo Msgs 11.1.0 (2025-05-09)
+
+1. Add CI support for bzlmod
+    * [Pull request #508](https://github.com/gazebosim/gz-msgs/pull/508)
+
+1. Migrate bazel build setup to use bzlmod
+    * [Pull request #507](https://github.com/gazebosim/gz-msgs/pull/507)
+
+1. ci: enable doxygen check on noble
+    * [Pull request #505](https://github.com/gazebosim/gz-msgs/pull/505)
+
+1. Fix compatibility with protobuf v30 (cpp 6.30.0) (#499)
+    * [Pull request #500](https://github.com/gazebosim/gz-msgs/pull/500)
+
+1. Code cleanup (#485)
+    * [Pull request #497](https://github.com/gazebosim/gz-msgs/pull/497)
+
+1. Update maintainer email (#487)
+    * [Pull request #490](https://github.com/gazebosim/gz-msgs/pull/490)
+
+1. cmake extras: only find Python3 if needed
+    * [Pull request #479](https://github.com/gazebosim/gz-msgs/pull/479)
+
+1. Add rule to build python version of protos
+    * [Pull request #474](https://github.com/gazebosim/gz-msgs/pull/474)
+
+1. Return only unique message types in `MessageFactory::Types` function
+    * [Pull request #472](https://github.com/gazebosim/gz-msgs/pull/472)
+
 ### Gazebo Msgs 11.0.2 (2025-01-10)
 
 1. cmake extras: only find Python3 if needed
@@ -59,6 +88,24 @@
 
 
 ## Gazebo Msgs 10.x
+
+### Gazebo Msgs 10.3.2 (2025-02-10)
+
+1. cmake extras: only find Python3 if needed
+    * [Pull request #479](https://github.com/gazebosim/gz-msgs/pull/479)
+
+### Gazebo Msgs 10.3.1 (2024-11-11)
+
+1. Add rule to build python version of protos
+    * [Pull request #474](https://github.com/gazebosim/gz-msgs/pull/474)
+
+1. Return only unique message types in `MessageFactory::Types` function
+    * [Pull request #472](https://github.com/gazebosim/gz-msgs/pull/472)
+
+### Gazebo Msgs 10.3.0 (2024-06-18)
+
+1. Backport: Adding cone primitives.
+    * [Pull request #442](https://github.com/gazebosim/gz-msgs/pull/442)
 
 ### Gazebo Msgs 10.2.0 (2024-05-17)
 
@@ -372,7 +419,7 @@
     * [Pull request #241](https://github.com/gazebosim/gz-msgs/pull/241)
     * [Pull request #298](https://github.com/gazebosim/gz-msgs/pull/298)
 
-1. Remove redunant namespace references
+1. Remove redundant namespace references
     * [Pull request #293](https://github.com/gazebosim/gz-msgs/pull/293)
 
 ### Gazebo Msgs 8.6.0 (2022-08-02)
