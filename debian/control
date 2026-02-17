@@ -21,13 +21,13 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends:
- libgz-msgs11 (= ${binary:Version}),
+ libgz-msgs12 (= ${binary:Version}),
  ${misc:Depends},
 Description: Messages for Gazebo robot simulation - development files
  Gazebo Messages is a component in the Gazebo framework, a set of libraries
  designed to rapidly develop robot applications.
 
-Package: libgz-msgs11
+Package: libgz-msgs12
 Architecture: any
 Multi-Arch: same
 Depends:
@@ -44,7 +44,7 @@ Depends:
  ruby,
  ${shlibs:Depends},
  ${misc:Depends},
- libgz-msgs11 (= ${binary:Version}),
+ libgz-msgs12 (= ${binary:Version}),
 Description: Messages for Gazebo robot simulation
  Gazebo Messages is a component in the Gazebo framework, a set of libraries
  designed to rapidly develop robot applications.
@@ -56,7 +56,7 @@ Depends:
  ${python3:Depends},
  ${shlibs:Depends},
  ${misc:Depends},
- libgz-msgs11 (= ${binary:Version}),
+ libgz-msgs12 (= ${binary:Version}),
 Description: Messages for Gazebo robot simulation
  Gazebo Messages is a component in the Gazebo framework, a set of libraries
  designed to rapidly develop robot applications.
@@ -68,7 +68,7 @@ Description: Messages for Gazebo robot simulation
 #Depends:
 # ${shlibs:Depends},
 # ${misc:Depends},
-# libgz-msgs11 (= ${binary:Version}),
+# libgz-msgs12 (= ${binary:Version}),
 ##Description: Messages for Gazebo robot simulation
 # Gazebo Messages is a component in the Gazebo framework, a set of libraries
 # designed to rapidly develop robot applications.
