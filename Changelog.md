@@ -1,3 +1,66 @@
+## Gazebo Msgs 12.x
+
+### Gazebo Msgs 12.0.1 (2026-01-20)
+
+1. Find jetty packages with explicit version
+    * [Pull request #551](https://github.com/gazebosim/gz-msgs/pull/551)
+
+1. Bazel updates
+    * [Pull request #537](https://github.com/gazebosim/gz-msgs/pull/537)
+    * [Pull request #540](https://github.com/gazebosim/gz-msgs/pull/540)
+    * [Pull request #541](https://github.com/gazebosim/gz-msgs/pull/541)
+    * [Pull request #552](https://github.com/gazebosim/gz-msgs/pull/552)
+
+1. Only call find_package(Python3 REQUIRED COMPONENTS Interpreter) if strictly necessary
+    * [Pull request #536](https://github.com/gazebosim/gz-msgs/pull/536)
+
+### Gazebo Msgs 12.0.0 (2025-09-30)
+
+1. **Baseline:** this includes all changes from 11.1.0 and earlier.
+
+1. Use uint64 type for component IDs
+    * [Pull request #529](https://github.com/gazebosim/gz-msgs/pull/529)
+
+1. Tutorial updates:
+    * [Pull request #532](https://github.com/gazebosim/gz-msgs/pull/532)
+    * [Pull request #531](https://github.com/gazebosim/gz-msgs/pull/531)
+    * [Pull request #494](https://github.com/gazebosim/gz-msgs/pull/494)
+
+1. Bazel updates
+    * [Pull request #530](https://github.com/gazebosim/gz-msgs/pull/530)
+    * [Pull request #521](https://github.com/gazebosim/gz-msgs/pull/521)
+    * [Pull request #519](https://github.com/gazebosim/gz-msgs/pull/519)
+    * [Pull request #514](https://github.com/gazebosim/gz-msgs/pull/514)
+    * [Pull request #511](https://github.com/gazebosim/gz-msgs/pull/511)
+    * [Pull request #510](https://github.com/gazebosim/gz-msgs/pull/510)
+
+1. Revert support for non-qualified message names
+    * [Pull request #520](https://github.com/gazebosim/gz-msgs/pull/520)
+
+1. Install executable to unversioned folder
+    * [Pull request #518](https://github.com/gazebosim/gz-msgs/pull/518)
+
+1. Fix gz msgs ruby command
+    * [Pull request #516](https://github.com/gazebosim/gz-msgs/pull/516)
+
+1. sensor.proto: use NavSatSensor type
+    * [Pull request #515](https://github.com/gazebosim/gz-msgs/pull/515)
+
+1. Restore support for non-qualified message names
+    * [Pull request #512](https://github.com/gazebosim/gz-msgs/pull/512)
+
+1. Update navsat proto to include covariance
+    * [Pull request #489](https://github.com/gazebosim/gz-msgs/pull/489)
+
+1. Bump gz-cmake and others in jetty
+    * [Pull request #506](https://github.com/gazebosim/gz-msgs/pull/506)
+
+1. Remove deprecations: tock
+    * [Pull request #476](https://github.com/gazebosim/gz-msgs/pull/476)
+
+1. WheelSlipParametersCmd: add friction
+    * [Pull request #464](https://github.com/gazebosim/gz-msgs/pull/464)
+
 ## Gazebo Msgs 11.x
 
 ### Gazebo Msgs 11.1.0 (2025-05-09)

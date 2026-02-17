@@ -62,7 +62,7 @@ message FooMessage
 
 Note that each field has a corresponding *field number*.
 Each field must be given an ID between `1` and `536,870,911`, with the following
-restrctions (from the [language guide](https://protobuf.dev/programming-guides/proto3/#assigning)):
+restrictions (from the [language guide](https://protobuf.dev/programming-guides/proto3/#assigning)):
 
 * The given number must be unique among all fields for that message.
 * Field numbers `19,000` to `19,999` are reserved for the Protocol Buffers implementation.
@@ -123,13 +123,13 @@ The code for this example can be found in the `gz-msgs` [repository](https://git
 
 
 The `cmake` functionality is exported from the `gz-msgs` library, via the `gz-cmake` [`extras` functionality](https://github.com/gazebosim/gz-cmake/pull/345).
-To make the functions available, simply `find_package(gz-msgs11)` in your `CMakeLists.txt`:
+To make the functions available, simply `find_package(gz-msgs)` in your `CMakeLists.txt`:
 
 ```cmake
 cmake_minimum_required(VERSION 3.22.1 FATAL_ERROR)
 project(my_custom_package VERSION 0.0.1)
-find_package(gz-cmake4 REQUIRED)
-find_package(gz-msgs11 REQUIRED)
+find_package(gz-cmake REQUIRED)
+find_package(gz-msgs REQUIRED)
 ```
 
 
@@ -215,7 +215,7 @@ gz_msgs_generate_messages(
   # List of proto files to process
   MSGS_PROTOS ${MSGS_PROTOS}
   # Dependency on gz-msgs
-  DEPENDENCIES gz-msgs11::gz-msgs11
+  DEPENDENCIES gz-msgs::gz-msgs
 )
 ```
 
@@ -223,12 +223,11 @@ In order to reduce the amount of edits needed upon a version change of `gz-msgs`
 
  - Define a variable `GZ_MSGS_VER`, holding the version number:
    ```cmake
-   find_package(gz-msgs11 REQUIRED)
-   set(GZ_MSGS_VER ${gz-msgs11_VERSION_MAJOR})
+   find_package(gz-msgs REQUIRED)
    ```
  - And change the dependency line in above code block to:
    ```cmake
-   DEPENDENCIES gz-msgs${GZ_MSGS_VER}::gz-msgs${GZ_MSGS_VER}
+   DEPENDENCIES gz-msgs::gz-msgs
    ```
 
 ### Using Custom messages

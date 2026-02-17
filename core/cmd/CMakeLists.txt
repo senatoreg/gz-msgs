@@ -1,11 +1,16 @@
-set(msgs_executable gz-msgs)
+# Define the desired output name of the executable
+set(msgs_executable_output_name gz-msgs)
+# Append "-exe" to cmake target name to differ from the library target name
+set(msgs_executable gz-msgs-exe)
 add_executable(${msgs_executable} msgs_main.cc)
+set_target_properties(${msgs_executable}
+  PROPERTIES OUTPUT_NAME ${msgs_executable_output_name})
 target_link_libraries(${msgs_executable}
   ${PROJECT_LIBRARY_TARGET_NAME}
-  gz-utils${GZ_UTILS_VER}::cli
+  gz-utils::cli
 )
 
-set(EXE_INSTALL_DIR ${CMAKE_INSTALL_LIBEXECDIR}/gz/${GZ_DESIGNATION}${PROJECT_VERSION_MAJOR}/)
+set(EXE_INSTALL_DIR ${CMAKE_INSTALL_LIBEXECDIR}/gz/${GZ_DESIGNATION}/)
 install(TARGETS ${msgs_executable} DESTINATION ${EXE_INSTALL_DIR})
 set(executable_location "../../../${EXE_INSTALL_DIR}/$<TARGET_FILE_NAME:${msgs_executable}>")
 

@@ -64,7 +64,7 @@ which version you need.
 
 Install required dependencies as follows:
 ```
-sudo apt-get install libprotobuf-dev protobuf-compiler libprotoc-dev libgz-math8-dev
+sudo apt-get install libprotobuf-dev protobuf-compiler libprotoc-dev libgz-math9-dev
 ```
 
 ### Building from Source
@@ -90,7 +90,7 @@ sudo make uninstall
 
 1. Clone the repository
   ```
-  git clone https://github.com/gazebosim/gz-msgs -b ign-msgs<#>
+  git clone https://github.com/gazebosim/gz-msgs -b gz-msgs<#>
   ```
   Be sure to replace `<#>` with a number value, such as 1 or 2, depending on
   which version you need.
@@ -179,7 +179,7 @@ This assumes you have created and activated a Conda environment while installing
 # Documentation
 
 API documentation and tutorials can be accessed at
-[https://gazebosim.org/libs/cmake](https://gazebosim.org/libs/cmake)
+[https://gazebosim.org/libs/msgs](https://gazebosim.org/libs/msgs)
 
 You can also generate the documentation from a clone of this repository by following these steps.
 
@@ -190,12 +190,12 @@ You can also generate the documentation from a clone of this repository by follo
 
 2. Clone the repository
   ```
-  git clone https://github.com/gazebosim/gz-cmake
+  git clone https://github.com/gazebosim/gz-msgs
   ```
 
 3. Configure and build the documentation.
   ```
-  cd gz-cmake
+  cd gz-msgs
   mkdir build
   cd build
   cmake ..
